@@ -116,14 +116,14 @@ namespace Topic_5___Assignement
 
         static void Main(string[] args)
         {
-            // For full marks, add menu to select which part to run..
+            // For full marks, add menu to select which part to run...
             string menuChoice = "";
             int degrees, category, minutes, price;
 
             while (menuChoice != "q")
             {
                 Console.Clear();
-                Console.WriteLine("Welcome to Topic 5's menu.  Please select an option:");
+                Console.WriteLine("Welcome to Topic 5's Menu!  Please select an option to try:");
                 Console.WriteLine();
                 Console.WriteLine("1 - Compass Bearing");
                 Console.WriteLine("2 - Parking Garage");
