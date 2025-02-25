@@ -186,6 +186,7 @@ namespace Topic_5___Assignement
                         Console.WriteLine("Invalid number. Try again.");
                     }
                     Hurricane(category);
+                    Console.WriteLine();
                     Console.WriteLine("Hit ENTER to return to main menu!");
                     Console.ReadLine();
                 }
