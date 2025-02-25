@@ -14,16 +14,16 @@ namespace Topic_5___Assignement
                     Console.WriteLine("A Category 1 hurricane has a speed of 74-95 mph, or 64-82 kt, or 119-153 km/h.");
                     break;
                 case 2:
-                    Console.WriteLine("A Category 2 hurricane has a speed of 96-110 mph, or 83-95 kt, or 154-177 km/h");
+                    Console.WriteLine("A Category 2 hurricane has a speed of 96-110 mph, or 83-95 kt, or 154-177 km/h.");
                     break;
                 case 3:
-                    Console.WriteLine("A Category 3 hurricane has a speed of 111-130 mph, or 96-113 kt, or 178-209 km/h");
+                    Console.WriteLine("A Category 3 hurricane has a speed of 111-130 mph, or 96-113 kt, or 178-209 km/h.");
                     break;
                 case 4:
-                    Console.WriteLine("A Category 4 hurricane has a speed of 131-155 mph, ot 114-135 kt, or 210-249 km/h");
+                    Console.WriteLine("A Category 4 hurricane has a speed of 131-155 mph, ot 114-135 kt, or 210-249 km/h.");
                     break;
                 case 5:
-                    Console.WriteLine("A Category 5 hurricane has a speed that is GREATER than 155 mph, or 135 kt, or 249 km/h");
+                    Console.WriteLine("A Category 5 hurricane has a speed that is GREATER than 155 mph, or 135 kt, or 249 km/h.");
                     break;
             }
 
@@ -41,13 +41,13 @@ namespace Topic_5___Assignement
                 {
                     price = 20;
                     Console.WriteLine("You parked for " + hours + " hours.");
-                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C"));
+                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C") + ".");
 
                 }
                 else
                 {
                     Console.WriteLine("You parked for: " + hours + " hours.");
-                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C"));
+                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C") + ".");
                 }
             }
             else
@@ -58,13 +58,13 @@ namespace Topic_5___Assignement
                 {
                     price = 20;
                     Console.WriteLine("You parked for " + hours + " hours.");
-                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C"));
+                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C") + ".");
 
                 }
                 else
                 {
                     Console.WriteLine("You parked for: " + hours + " hours.");
-                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C"));
+                    Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C") + ".");
                 }
                
 
@@ -79,35 +79,35 @@ namespace Topic_5___Assignement
             degrees = degrees % 360;
             if ( degrees < 45 || degrees > 315)
             {
-                Console.WriteLine("You would be facing in the North direction");
+                Console.WriteLine("You would be facing in the North direction.");
             }
             else if (degrees == 45 )
             {
-                Console.WriteLine("You would be facing exactly in the North East direction");
+                Console.WriteLine("You would be facing exactly in the North East direction.");
             }
             else if ( degrees > 45 && degrees < 135)
             {
-                Console.WriteLine("You would be facing in the East direction");
+                Console.WriteLine("You would be facing in the East direction.");
             }
             else if (degrees == 135 )
             {
-                Console.WriteLine("You would be facing exactly in the South East direction");
+                Console.WriteLine("You would be facing exactly in the South East direction.");
             }
             else if ( degrees > 135 && degrees < 225)
             {
-                Console.WriteLine("You would be facing in the South direction");
+                Console.WriteLine("You would be facing in the South direction.");
             } 
             else if (degrees == 225 )
             {
-                Console.WriteLine("You would be facing exactly in the South West direction");
+                Console.WriteLine("You would be facing exactly in the South West direction.");
             }
             else if (degrees > 225 && degrees < 315)
             {
-                Console.WriteLine("You would be facing in the West direction");
+                Console.WriteLine("You would be facing in the West direction.");
             }
             else if (degrees == 315)
             {
-                Console.WriteLine("You would be facing exactly in the North West direction");
+                Console.WriteLine("You would be facing exactly in the North West direction.");
             }
   
 
@@ -196,10 +196,6 @@ namespace Topic_5___Assignement
                     Console.ReadLine();
                 }
             }
-
-
         }
-
-       
     }
 }
