@@ -33,8 +33,6 @@ namespace Topic_5___Assignement
         {
             Console.WriteLine();
 
-
-
             if (minutes % 60 > 0)
             {
                 int hours = (minutes / 60) + 1;
@@ -51,8 +49,6 @@ namespace Topic_5___Assignement
                     Console.WriteLine("You parked for: " + hours + " hours.");
                     Console.WriteLine("The total cost you are being charged for is: " + price.ToString("C"));
                 }
-
-               
             }
             else
             {
@@ -75,7 +71,47 @@ namespace Topic_5___Assignement
             }
         }
 
+        public static void Compass(int degrees)
+        {
+            // 315-45 = N; 45-135 = E; 135-225 = S; 225-315 = W;
+            // 315 = NW; 360/0 = N; 45=NE; 90 = E; 135 = SE; 180 = S; 225 = SW; 270 = W
+            Console.WriteLine();
+            degrees = degrees % 360;
+            if ( degrees < 45 || degrees > 315)
+            {
+                Console.WriteLine("You would be facing in the North direction");
+            }
+            else if (degrees == 45 )
+            {
+                Console.WriteLine("You would be facing exactly in the North East direction");
+            }
+            else if ( degrees > 45 && degrees < 135)
+            {
+                Console.WriteLine("You would be facing in the East direction");
+            }
+            else if (degrees == 135 )
+            {
+                Console.WriteLine("You would be facing exactly in the South East direction");
+            }
+            else if ( degrees > 135 && degrees < 225)
+            {
+                Console.WriteLine("You would be facing in the South direction");
+            } 
+            else if (degrees == 225 )
+            {
+                Console.WriteLine("You would be facing exactly in the South West direction");
+            }
+            else if (degrees > 225 && degrees < 315)
+            {
+                Console.WriteLine("You would be facing in the West direction");
+            }
+            else if (degrees == 315)
+            {
+                Console.WriteLine("You would be facing exactly in the North West direction");
+            }
+  
 
+        }
 
 
         static void Main(string[] args)
@@ -108,6 +144,15 @@ namespace Topic_5___Assignement
                     Console.ReadLine();
                     Console.WriteLine("If you give me an angle, I can tell you what direction it would be pointing on a compass!");
                     Console.WriteLine("What angle would you like me to convert? ");
+                    while (!Int32.TryParse(Console.ReadLine(), out degrees))
+                    {
+                        Console.WriteLine("Invalid number. Try again.");
+                    };
+                    Compass(degrees);
+                    Console.WriteLine();
+                    Console.WriteLine("Hit ENTER to return to main menu!");
+                    Console.ReadLine();
+
                 }
                 //Parking garage - $4 first hour, $2 every hour after, max of $20/day, input minutes
                 else if (menuChoice == "2")
