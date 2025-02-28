@@ -190,6 +190,11 @@ namespace Topic_5___Assignement
                     Console.WriteLine("Hit ENTER to return to main menu!");
                     Console.ReadLine();
                 }
+                else if (choice == "q")
+                {
+                    Console.WriteLine("Thanks for playing!");
+                    return;
+                }
 
                 else
                 {
